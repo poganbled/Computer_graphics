@@ -1,7 +1,7 @@
 import math
-
 import numpy as np
 from PIL import Image, ImageOps
+
 def draw_line(self, image, x0, y0, x1, y1, count, color):
     step = 1.0/count
     for t in np.arange(0, 1, step):
