@@ -187,7 +187,6 @@ def render(file,texture,img_mat,zb, rot,tx,ty,tz,a,b,theta,angle,u):
 
 img_mat = np.zeros((2000, 3000, 3), dtype=np.uint8)
 zb = np.full((2000, 3000), np.inf, dtype=np.float32)
-#render("model_1.obj","bunny-atlas.jpg",img_mat,zb)
 render("model_1.obj","bunny-atlas.jpg",img_mat,zb,"q", 0.05,-0.1,1, 15000,2000,math.pi/3,[],[0,1,0])
 render("model_1.obj","bunny-atlas.jpg",img_mat,zb,"e", 0.05,-0.05,1.1, 15000,3000,0,[0,math.pi/2,0],[0,0,1])
 render("model_1.obj","bunny-atlas.jpg",img_mat,zb,"q", 0.01,-0.01,1, 20000,2000,-math.pi/3,[],[1,0,0])
